@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # From saveaspeciesapp/app.py added the apps configuration
+    'saveaspeciesapp.apps.SaveaspeciesappConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -66,6 +68,11 @@ TEMPLATES = [
         },
     },
 ]
+
+# Template Directory for Saveaspecies app
+TEMPLATE_DIRS = (
+    "saveaspecies/Templates",
+)
 
 WSGI_APPLICATION = 'web_project.wsgi.application'
 

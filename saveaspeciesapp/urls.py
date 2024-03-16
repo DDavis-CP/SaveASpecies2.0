@@ -8,5 +8,5 @@ from saveaspeciesapp.views import *
 
 urlpatterns = [
     #creates a path to reference the Landingview in the view.py file that points to the landing_page template
-    path('landing/', Landingview.as_view(), name = 'landing')
+    path('', Landingview.as_view(), name='landing')
 ]

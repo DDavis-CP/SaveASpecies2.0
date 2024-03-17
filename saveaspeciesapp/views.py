@@ -6,3 +6,7 @@ from django.views import View
 class Landingview(View):
     def get(self, request):
         return render( request=request , template_name ="landing_page.html", context = {})
+    
+class Homeview(View):
+    def get(self, request):
+        return render( request=request , template_name ="home.html", context = {})

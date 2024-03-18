@@ -8,7 +8,6 @@ from django.views import View
 class Landingview(View):
     def get(self, request):
         return render( request=request , template_name ="landing_page.html", context = {})
-    
  #Class based view that combines the Home template and a context dictionary that returns an HTTP response with the rendered arguments
 class Homeview(View):
     def get(self, request):
@@ -17,7 +16,11 @@ class Homeview(View):
 class Animaltypeview(View):
     def get(self, request):
         return render( request=request , template_name ="animal_type.html", context = {})
-#Class based view that combines the animal_species template and a context dictionary that returns an HTTP response with the rendered arguments
+ #Class based view that combines the animal_species template and a context dictionary that returns an HTTP response with the rendered arguments
 class Animalspeciesview(View):
     def get(self, request):
         return render( request=request , template_name ="animal_species.html", context = {})
+ #Class based view that combines the source_page template and a context dictionary that returns an HTTP response with the rendered arguments
+class Sourcesview(View):
+    def get(self, request):
+        return render( request=request , template_name ="source_page.html", context = {})

@@ -17,3 +17,7 @@ class Homeview(View):
 class Animaltypeview(View):
     def get(self, request):
         return render( request=request , template_name ="animal_type.html", context = {})
+#Class based view that combines the animal_species template and a context dictionary that returns an HTTP response with the rendered arguments
+class Animalspeciesview(View):
+    def get(self, request):
+        return render( request=request , template_name ="animal_species.html", context = {})

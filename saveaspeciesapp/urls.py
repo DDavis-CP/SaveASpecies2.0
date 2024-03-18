@@ -11,4 +11,5 @@ urlpatterns = [
     path('', Landingview.as_view(), name='landing'),
     path('home/', Homeview.as_view(), name='home'),
     path('animal_type/', Animaltypeview.as_view(), name='animal_type'),
+    path('animal_type/animal_species/', Animalspeciesview.as_view(), name='animal_type'),
 ]

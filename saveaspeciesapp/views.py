@@ -24,3 +24,7 @@ class Animalspeciesview(View):
 class Sourcesview(View):
     def get(self, request):
         return render( request=request , template_name ="source_page.html", context = {})
+ #Class based view that combines the source_page template and a context dictionary that returns an HTTP response with the rendered arguments
+class Searchview(View):
+    def get(self, request):
+        return render( request=request , template_name ="search_page.html", context = {})

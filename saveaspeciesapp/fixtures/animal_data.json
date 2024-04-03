@@ -1,0 +1,23 @@
+[
+    {
+        "model": "saveaspeciesapp.Animal_Type",
+        "pk": 1,
+        "fields": {
+            "type_name": "Herbivore"
+        }
+    },
+    {
+        "model": "saveaspeciesapp.Animal_Type",
+        "pk": 2,
+        "fields": {
+            "type_name": "Omnivore"
+        }
+    },
+    {
+        "model": "saveaspeciesapp.Animal_Type",
+        "pk": 3,
+        "fields": {
+            "type_name": "Carnivore"
+        }
+    }
+]
